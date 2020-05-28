@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+}
+
+.card {
+    background: #000;
+    border: 5px solid #ff4d3b;
+}
+
+#header {
+    background: url(images/bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.some-text {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.some-text h1 {
+    font-size: 7rem;
+}
+
+.some-text p {
+    font-size: 1.5rem;
+}
+
+a.navbar-brand {
+    font-size: 1.7rem
+}
+
+.card img {
+    height: 226.6px;
+}
+
+.card-body h5.card-title:after {
+    display: block;
+    height: 5px;
+    background-color: #ff4d3b;
+    width: 100px;
+    content: " ";
+    margin-top: 15px;
+}
+
+#footer {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(images/footer_bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.some-text h3 {
+    color: #FD5140;
+    margin-bottom: 2rem;
+}
+
+.copy p {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
+
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .some-text h1 {
+        font-size: 6rem;
+    }
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .some-text h1 {
+        font-size: 5rem;
+    }
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .some-text h1 {
+        font-size: 4rem;
+    }
+
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .some-text h1 {
+        font-size: 3rem;
+    }
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .some-text h1 {
+        font-size: 2rem;
+    }
+
+    .some-text p {
+        font-size: .95rem;
+    }
+
+}
